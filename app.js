@@ -40,6 +40,4 @@ app.use(require("./routes/teacher"))
 app.use(require('./routes/notice'))
 app.use(require('./routes/report'))
 
-app.listen(PORT,()=>{
-    console.log("server is running on",PORT)
-})
+module.exports = app;
