@@ -26,12 +26,12 @@ require('./models/Issue')
 require('./models/Subject')
 
 app.use(express.json())
-// app.use(cors())
-app.use(
-    cors({
-        origin:["http://localhost:3000","http://web_pro_techh.onrender.com"]
-    })
-)
+app.use(cors())
+// app.use(
+//     cors({
+//         origin:["http://localhost:3000","http://web_pro_techh.onrender.com"]
+//     })
+// )
 app.use(require('./routes/user'))
 app.use(require('./routes/post'))
 app.use(require('./routes/user'))
